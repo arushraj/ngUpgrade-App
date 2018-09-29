@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>-->
+    <script src="./js/index.js"></script>
+</head>
+
+<body ng-app="myApp" ng-strict-di>
+    <div id="message" ng-controller="MainCtrl as mainCtrl">
+        {{ mainCtrl.message }}
+    </div>
+    <div>
+        <input ng-model="userName" placeholder="Angular 1+ textbox" />
+        <p ng-if="userName">
+            Hello {{userName}} from angular 1.
+        </p>
+    </div>
+</body>
+
+</html>
